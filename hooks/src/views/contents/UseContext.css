@@ -1,0 +1,60 @@
+.titulo {
+    align-self: center;
+    background-color: lightgray;
+    border-bottom: 5px solid gray;
+    margin-bottom: 20px;
+    color: #14273e;
+    text-align: center;
+    width: 100%;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.campo {
+    border-radius: 5px;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin: 10px;
+    padding: 5px;
+    width: 80%;
+    
+}
+
+.botao {
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #14273e;
+    border-width: 1px;
+    border-color: gray;
+    width: 80%;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.mensagem {
+    display: flex;
+    color: black;
+    border-radius: 5px;
+    background-color: lightgray;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin: 10px;
+    padding: 5px;
+    width: 80%;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+#Aprovado {
+    background-color: chartreuse;
+}
+
+#Reprovado {
+    background-color: firebrick;
+}

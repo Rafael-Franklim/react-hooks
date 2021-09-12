@@ -1,0 +1,36 @@
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+.titulo {
+    align-self: center;
+    background-color: lightgray;
+    border-bottom: 5px solid gray;
+    margin-bottom: 20px;
+    color: #14273e;
+    text-align: center;
+    width: 100%;
+}
+
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #a8dadc;
+}
+
+a:visited {
+    color: #a8dadc;
+}
+
+a:hover {
+    color: dodgerblue;
+}
