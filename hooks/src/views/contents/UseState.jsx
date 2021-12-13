@@ -1,53 +1,68 @@
 import './UseState.css'
 import React, { useState, useContext } from 'react'
 
-import { AppContexto } from '../../data/Store'
+
 
 const UseState = props => {
 
-    const { contextoNome, setContextoNome } = useContext(AppContexto)
-
-    const [ nome, setNome ] = useState("")
-    const [ sobrenome, setSobrenome ] = useState("")
-    const [ mensagem, setMensagem ] = useState("")
-
-    function alteraNomeContexto(nome){
-        setContextoNome(nome)
-    }
+    
 
     return (
         <div>
-            <div className="titulo">
-                <h1>useState</h1>
-                <h2>Manipula Estados em componentes funcionais</h2>
-            </div>
+            <h1>Deixe um comentario!</h1>
+            <br></br>
             <div className="conteudo">
+            <form>
 
-                <input 
-                    className="campo"
-                    type="text" value={nome}
-                    placeholder="Digite seu nome"
-                    onChange={ e => setNome(e.target.value) }
-                />
-                <input 
-                    className="campo"
-                    type="text"
-                    value={sobrenome}
-                    placeholder="Digite seu sobrenome"
-                    onChange={ e => setSobrenome(e.target.value) }
-                />
+    <label>
 
-                <button
-                    className="botao"
-                    onClick={ () => setMensagem(`Olá ${nome} ${sobrenome}, seja bem-vindo!`) }
-                >Ok</button>
+        E-mail:
 
-                <p className="mensagem">{mensagem}</p>
+        <br></br>
 
-                <button
-                    className="botao"
-                    onClick={ () => alteraNomeContexto(nome) }
-                >Altera contexto (Store)</button>
+        <input type="email" required="required" name="email"
+
+        id="text2" size="61" placeholder="Digite seu email aqui"
+
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" autofocus=""></input>
+
+        <br></br>
+
+        <input type="reset" value="Limpar"></input>
+
+        &nbsp;
+
+        <input type="submit" value="Confirmar"></input>
+
+       
+
+    </label>  
+<br></br>
+<br></br>
+    </form>
+
+    <form>
+
+<label>
+
+    <textarea id="textarea" name="textarea "
+
+    required="required" rows="15" cols="60"
+
+    placeholder="Deixe aqui sua mensagem aqui." autofocus="" ></textarea>
+
+    <br></br>
+
+    <input type="reset" value="Limpar"/>
+
+    &nbsp;
+
+    <input type="submit" value="Confirmar"/>
+
+</label>
+
+</form>
+                
             </div>
         </div>
     )

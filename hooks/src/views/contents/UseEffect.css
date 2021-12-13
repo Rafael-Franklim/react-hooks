@@ -41,3 +41,13 @@
 #Reprovado {
     background-color: firebrick;
 }
+
+h1 {
+    text-align: center;
+    color: crimson;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.3em;
+}

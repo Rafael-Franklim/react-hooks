@@ -5,8 +5,8 @@
 
 .titulo {
     align-self: center;
-    background-color: lightgray;
-    border-bottom: 5px solid gray;
+    background-color: rgb(219, 38, 38);
+    border-bottom: 5px solid rgb(255, 0, 0);
     margin-bottom: 20px;
     color: #14273e;
     text-align: center;
@@ -33,4 +33,8 @@ a:visited {
 
 a:hover {
     color: dodgerblue;
+}
+
+h3 {
+    text-align: center;
 }

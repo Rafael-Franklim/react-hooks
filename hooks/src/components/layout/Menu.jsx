@@ -7,16 +7,16 @@ const Menu = props => (
         <nav>
             <ul>
                 <li> 
-                    <Link to="/">Hooks</Link>
+                    <Link to="/">Home</Link>
                 </li>
                 <li> 
-                    <Link to="/useState">useState()</Link>
+                    <Link to="/useState">Comentarios</Link>
                 </li>
                 <li> 
-                    <Link to="/useEffect">useEffect()</Link>
+                    <Link to="/useEffect">Historia</Link>
                 </li>                                
                 <li> 
-                    <Link to="/useContext">useContext()</Link>
+                    <Link to="/useContext">Trofeus</Link>
                 </li>                                
             </ul>
         </nav>

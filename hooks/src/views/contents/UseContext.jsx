@@ -5,20 +5,17 @@ import { AppContexto } from '../../data/Store'
 
 const UseContext = props => {
 
-    const {contextoNome, setContextoNome} = useContext(AppContexto)
-    const {contextoSenha, setContextoSenha} = useContext(AppContexto)
+  
 
     return (
         <div> 
-            <div className="titulo">
-                <h1>useContext</h1>
-                <h2>Aceita um objeto de contexto e retorna o valor atual do contexto</h2>
-            </div>
-
+         <h1>Trofeus</h1>
+         <br></br>
             <div className="conteudo">
-                <label className="campo">Acesso encapsulado ao Contexto (Store)</label>
-                <p className="mensagem">Nome: {contextoNome}</p>
-                <p className="mensagem">Senha: {contextoSenha}</p>
+
+            <h3>Atualmente, a representar a equipe Mercedes, Hamilton tem o maior número de vitórias em corridas de Fórmula 1 com 103 triunfos, e também é o primeiro em número de títulos mundiais de Fórmula 1, juntamente com Schumacher. Detém ainda outros recordes absolutos, como o de maior número de pontos na carreira, o maior número de pole positions, maior número de volta lideradas, o maior número de pódios, o maior número de Grand Chelem em uma temporada e o maior número de pontos em uma temporada </h3>
+            <p><center><img src=" https://images.rr.sapo.pt/2020_10_25t150741z_11898e397defaultlarge_1024.jpg" width="600" heigth="400"></img></center></p>
+           
             </div>
         </div>
     )

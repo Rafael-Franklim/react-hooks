@@ -6,60 +6,15 @@ function verificaSituacao(nota) {
 }
 
 const UseEffect = props => {
-    const [ notaFinal, setNotaFinal ] = useState(0)
-    const [ situacao, setSituacao ] = useState("")
-
-    useEffect( () => {
-       console.log('useEffect: executa a cada Re-Renderização. \n\n')
-    })
-
-    useEffect( () => {
-        console.log('useEffect condicional ao componente:')
-        console.log('Executa somente na montagem do componente. \n\n')
-    }, [])
-
-    useEffect( () => {
-        setSituacao( verificaSituacao(notaFinal) )
-    }, [notaFinal] )
-
-    useEffect( () => {
-        console.log('useEffect condicional:')
-        console.log('Nesse caso, executa quando o state situacao for alterado. \n\n')
-    }, [situacao] )
-
-    useEffect( () => {
-        console.log('useEffect condicional (com limpeza):')
-        console.log('Executa enquanto um componente existir. \n\n')
-
-        return () => {
-            console.log('useEffect condicional (com limpeza):')
-            console.log('Executa o return quando o componente for desmontado. \n\n')
-        }
-    }, [])
-
-
-    console.log('\nO componente foi renderizado. \n\n')
+    
 
     return (
         <div>
-            <div className="titulo">
-                <h1>useEffect</h1>
-                <h2>Permite executar efeitos colaterais em componentes funcionais</h2>
-            </div>
-            
-            <div className="conteudo">
-                <label className="campo">Nota final:</label>
-                <input 
-                    className="campo"
-                    type="number"
-                    min={0}
-                    max={10}
-                    value={notaFinal}
-                    onChange={ e => setNotaFinal(e.target.value) }
-                />
-                <label className="campo">Situação:</label>
-                <p className="mensagem" id={situacao}>{situacao}</p>
-            </div>
+            <h1>Lewis Hamilton</h1>
+            <br></br>
+            <h2>Lewis Carl Davidson Hamilton é um auitomobilista britanico nascido Stevenage, em 7 de janeiro de 1985. </h2>
+            <p><center><img src="https://exame.com/wp-content/uploads/2021/04/iwc-lewishamilton-01-1.jpg?quality=70&strip=info.jpg" width="600" heigth="400"></img></center></p>
+            <h3>Além de ser comparado com os grandes pilotos de Fórmula 1, tem como ídolo o ex-piloto Ayrton Senna. Isso ficou ainda mais evidente quando Lewis Hamilton se igualou em números de pole position a Ayrton Senna no Grande Prêmio do Canadá de 2017, no qual ganhou da família de Ayrton, ainda na pista, um capacete usado por Senna na corrida, não conseguindo conter as lágrimas. No mesmo ano no Grande Prêmio da Itália, Lewis marcou sua pole de número 69 superando àquela altura a marca de Michael Schumacher de 68 poles, se tornando assim o recordista de pole positions</h3>
         </div>
     )
 }
